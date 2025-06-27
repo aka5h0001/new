@@ -1,0 +1,8 @@
+a = bool(0)
+b = bool(0.0)
+c = bool("0")
+d = bool("0.0")
+e =bool("10")
+f = bool(10)
+g =bool(False)
+h =bool(True)
