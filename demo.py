@@ -569,7 +569,140 @@
 
 
 
-f=([1,2,3,4,5,6])
-fs =frozenset(f)
-print(fs)
-print(type(fs))
+# f=([1,2,3,4,5,6])
+# fs =frozenset(f)
+# print(fs)git 
+# print(type(fs))
+# def devil(a,b):
+#     if a>b:
+#         print ("a")
+
+#     else:
+#         print("b")
+# a=4554889354126322065
+# b=45482619872
+
+# devil(a,b)
+
+# def GR (a,b):
+#     sum = a+b 
+#     print (sum )
+
+# a= 10
+# b=20
+# GR (a,b)
+
+# a = input("Enter a number : ")
+# def num(a):
+#    return a*a
+   
+# a = 10
+# print(num(a))
+
+
+# def sum_sub(a,b):
+#     sum = a+b
+#     sub = a-b
+#     return sum,sub
+
+# x,y = sum_sub(10,5)
+# print("sum = ",x)
+# print("sum = ",y)
+
+
+# def sum_sub(a,b):
+#     sum = a+b
+#     sub = a-b
+#     return sum,sub
+
+# a= int(input("Enter a number : "))
+# b = int(input("Enter a number : "))
+# print("sum = ",x)
+# print("sum = ",y)
+
+# x, y = sum_sub(a, b)
+
+
+# def is_prime(n):
+#     if n <= 1:
+#         return False
+#     for i in range(2, int(n ** 0.5) + 1):
+#         if n % i == 0:
+#             return False
+#     return True
+
+# num = int(input("Enter a number to check if it is prime: "))
+# if is_prime(num):
+#     print(num, "is a prime number")
+# else:
+#     print(num, "is not a prime number")
+
+# def reverse_number(num):
+#     rev = 0
+            
+#     while num != 0:
+#         lastnum = num % 10
+#         rev = rev* 10 + lastnum
+#         num = num // 10
+#     return rev
+# num_1=int(input("Enter a number to reverse: "))
+# print("Reversed number:", reverse_number(num_1))
+    
+
+# def fun(*n):
+#     total = 0
+#     for i in n:
+#         total = total + i
+#         print(total)      
+# fun(40,50)
+
+
+
+# def func(i,j,*n):
+#     print("i = ",i)
+#     print("j = ",j)
+#     print(n)
+
+# func(100,20,30,40,50)
+
+# def func(*n,i):
+#     print("i = ",i)
+#     print(n)
+# func(100,20,30,40,50,)
+
+# def func(*n,i):
+#     print("i = ",i)
+#     print(n)
+# func(100,20,30,40,50,i=60)
+
+# def func(**n):
+#     for key, value in n.items():
+#         print(f"{key} = {value}")
+# func(name="Alice", age=30, city="New York")
+
+
+# a = 100
+# b = 20
+# def f1():
+#     global a
+#     global b
+#     print(a)
+#     print(b)
+# def f2():
+#     print(a)
+#     print(b)
+
+# a = 1000
+# f1()
+
+# # f2()
+
+
+# from stable_baselines3 import PPO
+# model = PPO("MlpPolicy", "Humanoid-v4").learn(1_000_000)
+
+def sum (a, c, b):
+    sum = a + b +c
+    print("sum = ", sum)
+
+sum(10, 20, 30)
