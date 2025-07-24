@@ -1,3 +1,5 @@
+from functools import reduce
+
 # # Name = input(" Enter a name : ")
 # # english= int(input("enter an english marks : "))
 # # maths = int(input("enter a maths marks : " ))
@@ -673,11 +675,14 @@
 # def func(*n,i):
 #     print("i = ",i)
 #     print(n)
+#     print(type(n))
+#     print(type(i))
 # func(100,20,30,40,50,i=60)
 
 # def func(**n):
 #     for key, value in n.items():
 #         print(f"{key} = {value}")
+#         print(type(n))
 # func(name="Alice", age=30, city="New York")
 
 
@@ -701,8 +706,116 @@
 # from stable_baselines3 import PPO
 # model = PPO("MlpPolicy", "Humanoid-v4").learn(1_000_000)
 
-def sum (a, c, b):
-    sum = a + b +c
-    print("sum = ", sum)
+# def sum (a, c, b):
+#     sum = a + b +c
+#     print("sum = ", sum)
 
-sum(10, 20, 30)
+# sum(10, 20, 30)
+
+# # Factorial using recursion without a function
+# num2 = int(input("Enter a number to find its factorial (without function): "))
+# fact = 1
+# n = num2
+# while n > 1:
+#     fact *= n
+#     n -= 1
+# print("Factorial of", num2, "is", fact)
+
+
+
+# def factorial(n):
+#     if n == 0 or n == 1:
+#         return 1
+#     else:
+#         return n * factorial(n - 1)
+
+# num = int(input("Enter a number to find its factorial: "))
+# print("Factorial of", num, "is", factorial(num))
+
+
+# def sum(a, b):
+#     lambda sum: a * b
+#     print(a**b)
+
+# sum(10, 2)
+
+# def divide(n):
+#     return n % 5 == 0
+# num = [12,25,23,21,24,26,5,41,28,55,85,75,45,49,56,61,58]              
+
+# f = list(filter(divide, num))
+# print("Numbers divisible by 5:", f)
+
+
+# def m(n):
+#     return n ** 2
+# lst = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# f = map(m, lst)
+# print(list(f))
+
+
+# a = int(input("Enter a number: "))
+# b = int(input("Enter another number: "))
+# f = lambda sum : a + b
+# print(f(sum))
+
+
+# x = int(input("Enter a number: "))
+# even = lambda x: x % 2 == 0
+# if even(x):
+#     print(f"{x} is even")
+# else:
+#     print(f"{x} is odd")   
+   
+
+# a = int(input("Enter a number: "))
+# b = int(input("Enter another number: "))
+# f = lambda big, small: big if big > small else small
+# print(f"The larger number is: {f(a, b)}")   
+
+# def jetha(name):
+#     print(f"aur {name} ka kya haal hai")
+
+# jetha  = babita  
+
+
+# lst = [1, 2, 3, 4, 5]
+# total = reduce(lambda x, y: x + y, lst)
+# print("Sum of all elements:", total)
+
+# class Movie:
+#     def __init__(self, title, actor, year):
+#         self.title = title
+#         self.actor = actor
+#         self.year = year
+
+#     def display(self):
+#         print(f"Title: {self.title}")
+#         print(f"actor: {self.actor}")
+#         print(f"Year: {self.year}")
+
+# # Create an object of Movie class
+# movie1 = Movie("tere naam", "salu bhai", 2003)
+# movie1.display()
+
+
+class cls:
+    def __init__(self, name, roll_no, marks):
+        self.name = name
+        self.roll_no = roll_no
+        self.marks = marks
+
+    def display(self):
+        print(f"Name: {self.name}, roll_no: {self.roll_no}, marks: {self.marks}")
+
+c1 = cls("Raghav", 1, 85)
+c2 = cls("aasif", 2, 60)
+
+c3 = cls("amit", 5, 55)
+
+
+print(c1.display())
+print(c2.display())
+
+print(c3.display())
+
