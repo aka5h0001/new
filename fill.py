@@ -72,16 +72,46 @@
 # print("Name:", myclass.name)
 # print("Roll No:", myclass.roll_no)
 
-class Movie:
-    def __init__(self, title, actor, year):
-        self.title = title
-        self.actor = actor
-        self.year = year
+# class Movie:
+#     def __init__(self, title, actor, year):
+#         self.title = title
+#         self.actor = actor
+#         self.year = year
 
-    def display(self):
-        print(f"Title: {self.title}")
-        print(f"actor: {self.actor}")
-        print(f"Year: {self.year}")
+#     def display(self):
+#         print(f"Title: {self.title}")
+#         print(f"actor: {self.actor}")
+#         print(f"Year: {self.year}")
 
-movie1 = Movie("tere naam", "Salu bhai", 2010)
-movie1.display()
+# movie1 = Movie("tere naam", "Salu bhai", 2010)
+# movie1.display()
+                                #    oops
+
+
+
+
+# class cls:
+#     def __init__(self,name,rollno):
+#         self.name=name
+#         self.rollno=rollno
+#     def full(self):
+#         return f"{self.name},{self.rollno}"
+# c=cls("mnv",20)
+# print(c.full())
+
+
+ 
+# infinite value
+
+# while True:
+#     print('hi')
+
+
+
+
+
+
+
+
+
+

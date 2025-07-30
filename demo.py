@@ -798,24 +798,41 @@ from functools import reduce
 # movie1 = Movie("tere naam", "salu bhai", 2003)
 # movie1.display()
 
-
 class cls:
-    def __init__(self, name, roll_no, marks):
+    def __init__(self, name, roll_no):
         self.name = name
         self.roll_no = roll_no
+    def full(self):
+        return f"{self.name} {self.roll_no} {self.marks}"
+
+class add(cls):
+    def __init__(self, name, roll_no, marks):
+        super().__init__(name, roll_no)
         self.marks = marks
+c = add("aasif", 1, 85)
+print(c.full())
 
-    def display(self):
-        print(f"Name: {self.name}, roll_no: {self.roll_no}, marks: {self.marks}")
+# c1 = cls("Raghav", 1, 85)
+# c2 = cls("aasif", 2, 60)
 
-c1 = cls("Raghav", 1, 85)
-c2 = cls("aasif", 2, 60)
-
-c3 = cls("amit", 5, 55)
+# c3 = cls("amit", 5, 55)
 
 
-print(c1.display())
-print(c2.display())
+# print(c1.display())
+# print(c2.display())
 
-print(c3.display())
+# print(c3.display())
+
+
+
+# class Student:
+#     a = 10
+
+#     def m1(self):
+#         Student.b = "hello"  # Adds/updates class variable 'b'
+
+# odj = Student()
+# # odj.m1()
+# print(Student.__dict__)
+# print(odj.__dict__)  # Shows all class variables and methods
 
